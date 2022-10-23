@@ -1,0 +1,26 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Declaration spaces",
+  "steps": [
+    {
+      "file": "Language.Tests/DeclarationSpacesTest.cs",
+      "description": "### Declaration spaces\nWhen declaring the elements that make out our program, certain types of elements correspond to a declaration space. For example, namespaces, types, and type members all have their \"separate\" declaration space, which groups them together in a hierarchical manner. Upon each declaration space, there are rules to follow. The main one is that no two elements within the same declaration space shall share the same name. However, this main rules have some exceptions, such as namespace declaration, since you can declare two namespaces with the same name, which are going to be merge into a single unit, method overloading, and class constructors.",
+      "line": 8
+    },
+    {
+      "file": "Language.Tests/DeclarationSpacesTest.cs",
+      "description": "However, one of the main observations of this rule is that, when it is actually enforced, does not take the order of the member declarations in consideration, just the declaration spaces.",
+      "line": 10
+    },
+    {
+      "file": "Language.Tests/DeclarationSpacesTest.cs",
+      "description": "For example, in this case, if we were to uncomment this line, the declaration of `j` would conflict with the declaration on line 16, due to the same symbol being declared within nested local variables blocks.",
+      "line": 11
+    },
+    {
+      "file": "Language.Tests/DeclarationSpacesTest.cs",
+      "description": "But even if the declaration of the symbol comes _after_ the nested declaration, we still have a compilation error, because regardless of the order, there are still two declarations of the same token within a nested local variable space declaration",
+      "line": 19
+    }
+  ]
+}

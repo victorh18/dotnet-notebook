@@ -1,0 +1,36 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Pre-processing directives",
+  "steps": [
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "### Pre-processing directives\nPre-processing directives allow you to conditionally include or exclude parts of the soruce code that will reach for compilation. It may also issue errors, and delineate regions of your code.",
+      "line": 112
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "#### Conditional pre-processing directives\nThese evaluate conditional compilation symbols. They act like a normal if-elseif-else statement in most programming languages, and include the enclosed code as part of the input to be processed by the compiler.",
+      "line": 111
+    },
+    {
+      "file": "Language.Tests/Language.Tests.csproj",
+      "description": "Conditional compilation symbols can be defined in the project file, so when the compilation tasks run, they are added automatically as defined symbols. These values can also be applied conditionally, following MSBuild guidelines for conditions.",
+      "line": 10
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Only code enclosed by true-resulting evaluations will be added for compilation. As a default, this code won't run, because the conditional compilation symbol isn't defined neither in the file, nor the project file. To include this test in the executable, add a `#define` directive with the symbol `A` at the start of this file, or add the symbol in the project file.",
+      "line": 114
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Warnings can also be emitted with pre-processing directives.",
+      "line": 115
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Line pre-processing directive alter the way the compiler reports source file and line number in compilation tasks. `#line` directives affect the line after they are declared",
+      "line": 116
+    }
+  ]
+}

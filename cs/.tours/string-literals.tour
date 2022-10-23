@@ -1,0 +1,46 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "String Literals",
+  "steps": [
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "### String Literals\nString literals represent hardcoded string values. there are two types of string literals:",
+      "line": 91
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "The first type of string literals are _**regular string literals**_, which allow any sequence of characters enclosed by double quotes. Regular string literals accept simple, hexadecimal, and Unicode escape sequences, which will be transformed to their corresponding character once the literal is evaluated.",
+      "line": 93
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "For example, here the exclamation mark is represented with the `\\u0021` Unicode escape sequence.",
+      "line": 94
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "But nontheless, the evaluated string is the same as if the actual exclamation mark character were used.",
+      "line": 103
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "The other type of string literal is the _**verbatim string literal**_. This literal does not convert any escape sequence into any other character, meaning that these literals evaluate to a string containing the exact same characters it was created with.",
+      "line": 96
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Here, we can see that the `\\u0021` Unicode escape sequence was not escaped, so the evaluated verbatim literal is actually \"hello world\\u0021\".",
+      "line": 108
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Verbatim string literals support multi-line strings, preserving the carriage return and new line characters.",
+      "line": 99
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Another interesting behaviour of string literals is that, if two string literals evaluate to the same string within an assembly, the compiler makes it so that each literal refer to the same string instance.",
+      "line": 106
+    }
+  ]
+}

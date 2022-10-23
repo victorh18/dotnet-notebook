@@ -1,0 +1,16 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Using Keywords As Identifiers With The '@' Prefix",
+  "steps": [
+    {
+      "file": "Language/LexicalStructure.cs",
+      "description": "We can use reserved keywords as identifiers by using  the `@` character as a prefix for out identifier. This technique may be useful when we REALLY need to use the keyword as an identifier, or we need to interface with another language.",
+      "line": 26
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Since our definition of `static` was made as a identifier, and thus, as a compiler token, and we cannot use Unicode escape sequences for keywords, when a token has an escape sequence, the compiler can detect that, `static`, used with a escape character, is an identifier, not a keyworkd, and thus searches for an idenfier inside the `LexicalStructure` class that matches the resulting identifier.",
+      "line": 17
+    }
+  ]
+}

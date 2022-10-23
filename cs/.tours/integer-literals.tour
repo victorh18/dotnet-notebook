@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Integer Literals",
+  "steps": [
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "### Integer Literals\nInteger literals represent Integer values with characters in your code. Since dotnet has different types for different types of integers, the compiler may need assistence in the inference of these types. Automatically, the compiler will asign a type that fits the literal representation, so if our number is too big for an `int`, the compiler will assign `long` to the literal data type.",
+      "line": 21
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Simple numbers that fit an int will be stored as such",
+      "line": 23
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "The underscore (`_`) character can be used as a decorator, which is useful to format integers that are too long and improve code readability.",
+      "line": 24
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Suffixes can be added at the end of the literal to tell the compiler what data type to use for the literal value. In this case, the `U` suffix tells the compiler to interpret this value as a `uint`",
+      "line": 25
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Hexadecimal literals must start with the `0x` or `0X` prefix.",
+      "line": 28
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Binary literals must start with a `0b` or `0B` prefix.",
+      "line": 31
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "In the end, there are many literal representations for the same value.",
+      "line": 44
+    }
+  ]
+}

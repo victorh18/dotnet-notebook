@@ -1,0 +1,12 @@
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/bin/Debug/net6.0/Language.deps.json
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/bin/Debug/net6.0/Language.dll
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/bin/Debug/net6.0/Language.pdb
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/Language.csproj.AssemblyReference.cache
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/Language.GeneratedMSBuildEditorConfig.editorconfig
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/Language.AssemblyInfoInputs.cache
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/Language.AssemblyInfo.cs
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/Language.csproj.CoreCompileInputs.cache
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/Language.dll
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/refint/Language.dll
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/Language.pdb
+/home/vdelarosa/Projects/dotnet-notebook/cs/Language/obj/Debug/net6.0/ref/Language.dll

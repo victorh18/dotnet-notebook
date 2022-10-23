@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Access Modifiers",
+  "steps": [
+    {
+      "file": "Language.Tests/AccessModifierTests.cs",
+      "description": "### Access Modifiers\nThe accessibility of a member can be defined at the moment of its declaration, to specify in which portions of the code the member can be used. If the member can be used at a specific part of the program, it is said that it is accessible. If not, it is said to be inaccessible. ",
+      "line": 6
+    },
+    {
+      "file": "Language/AccessModifiers.cs",
+      "description": "These are the possible access definitions that a member can have when declared in a class.",
+      "line": 3
+    },
+    {
+      "file": "Language/AccessModifiers.cs",
+      "description": "For example, private methods can only be accessed from inside the class it is declared",
+      "line": 44
+    },
+    {
+      "file": "Language/AccessModifiers.cs",
+      "description": "Like this.",
+      "line": 37
+    },
+    {
+      "file": "Language/AccessModifiers.cs",
+      "description": "In this context, the following access definitions work:\n* `public:` because public members are accessible anywhere their parent class is.\n* `internal:` because the method is being called from the same assembly (Language.csproj)\n* `protected internal:` because the method is valid in both _protected_ and _internal_ contexts.\n\nIn this context, the following access definitions do not work:\n* `private:` because this is not the same class the method was declared in.\n* `protected:` because this class is not derived from the one that declared the method.\n* `private protected:` because neither of the previous conditions are met.",
+      "line": 69
+    },
+    {
+      "file": "Language.Tests/AccessModifierTests.cs",
+      "description": "In this context, only the `public` modifier is valid, meaning that when there is no relationship between the current class and the accessed class, in terms of inheritance or assembly, only `public` members are accessible",
+      "line": 19
+    },
+    {
+      "file": "Language.Tests/AccessModifierTests.cs",
+      "description": "In this context, the following access modifiers are valid:\n* `public`\n* `protected:` because this is a derived class of the method's class.\n* `protected internal:` because the protected conditions are met.  \n\nIn this context, the following access modifiers are invalid:\n* `private:` because this not the class where the method was declared.\n* `internal:` because this is a different assembly (Language.Test.csproj)\n* `private protected:` because, even when the `protected` modifier is present, the `private` modifiers forces it to be within the same assembly. In this case, it is not an `or` relationship, but and `and` relationship, where it has to be both in the same assembly and derived from the original class.",
+      "line": 34
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Real Literals",
+  "steps": [
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "### Real Literals\nJust like with integers, `dotnet` provides different data types to handle real values. And just like with integers, there are special syntaxes to handle these data types.",
+      "line": 60
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "By default, any numeric expression with a floating point, is interpreted as a `double`.",
+      "line": 63
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Real values, like integers, can use an underscore (`_`) as a decorator to facilitate code readability.",
+      "line": 64
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Real literals can also be written with exponents in the form `<integer-part>e|E<exponent-part>`, meaning that a literal `43E5` is equivalent to `43e^5` and a literal like `55e-2` is equal to `55e^-2`.",
+      "line": 65
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Exponents can also be decorated with an underscore.",
+      "line": 67
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "The `F` suffix tells the compiler to treat the literal as a `float` type.",
+      "line": 69
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "The `M` suffix tells the compiler to treat the literal as a `decimal` type.",
+      "line": 70
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Decorators cannot be put at the end of an integer part...",
+      "line": 71
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "... and neither at the end of a floating part.",
+      "line": 72
+    },
+    {
+      "file": "Language.Tests/LexicalStructureTest.cs",
+      "description": "Decorator cannot be put in between the exponent indicator and its value.",
+      "line": 73
+    }
+  ]
+}
